@@ -11,8 +11,10 @@ var pScope int = 42
 // (Definitions starting with capital letters are available everywhere)
 var GScope int = 24
 
+/** Basics primitive types */
 func BasicsTypes() {
-	fmt.Println("TYPES basics")
+	fmt.Println(" ")
+	fmt.Println("TYPES: Basics")
 	fmt.Println("package scope", pScope)
 	fmt.Println("global scope", GScope)
 

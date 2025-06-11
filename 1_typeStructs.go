@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-// type definition (for all packages because start with capital letter)
+/** type definition (for all packages because start with capital letter)*/
 type Person struct {
 	name string
 	lastName string
@@ -18,8 +18,10 @@ func (instance *Person) fullName() string {
 	return instance.name + " " + instance.lastName
 }
 
+// Structs are collections of fields
 func StructsTypes() {
-	fmt.Println("TYPES structs")
+	fmt.Println(" ")
+	fmt.Println("TYPES: Structs")
 
 	// Create a new Person struct with specific values
 	person := Person{
