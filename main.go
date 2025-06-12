@@ -7,6 +7,7 @@ func main() {
 	StructsTypes()
 	TypeMap()
 	TypeSlice()
+	TypeInterface()
 
 	fmt.Println(" ************************************************** ")
 	OperationCondition()
