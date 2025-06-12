@@ -10,6 +10,7 @@ func main() {
 
 	fmt.Println(" ************************************************** ")
 	OperationCondition()
+	OperationLoops()
 
 	// fmt.Println(" ************************************************** ")
 
