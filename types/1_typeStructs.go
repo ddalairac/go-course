@@ -2,14 +2,15 @@ package types
 
 import (
 	"fmt"
+	"go-course/helpers"
 	"time"
 )
 
 /** type definition (for all packages because start with capital letter)*/
 type Person struct {
-	name string
+	name     string
 	lastName string
-	age  int
+	age      int
 	birthday time.Time
 }
 
@@ -20,14 +21,13 @@ func (instance *Person) fullName() string {
 
 // Structs are collections of fields
 func StructsTypes() {
-	fmt.Println(" ")
-	fmt.Println("TYPES: Structs")
+	helpers.PrintSubTitle("TYPES: Structs")
 
 	// Create a new Person struct with specific values
 	person := Person{
-		name: "John",
+		name:     "John",
 		lastName: "Wick",
-		age: 40,
+		age:      40,
 		birthday: time.Date(1985, 10, 19, 0, 0, 0, 0, time.UTC),
 	}
 	fmt.Println("person:", person)
@@ -38,6 +38,4 @@ func StructsTypes() {
 
 	// Call the struct method to get the full name
 	fmt.Println("person fullname:", person.fullName())
-
-	fmt.Println("--------------------------------")
 }

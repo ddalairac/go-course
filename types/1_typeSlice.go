@@ -2,10 +2,12 @@ package types
 
 import (
 	"fmt"
+	"go-course/helpers"
 	"sort"
 )
 
-/** Slices are dynamic arrays that can grow or shrink as needed
+/*
+* Slices are dynamic arrays that can grow or shrink as needed
 Key differences with arrays:
 - Arrays have fixed size, slices are dynamic
 - Arrays: [5]int{} - size is part of the type
@@ -14,8 +16,7 @@ Key differences with arrays:
 - Slices can be sorted and modified
 */
 func TypeSlice() {
-	fmt.Println(" ")
-	fmt.Println("TYPES: Slice")
+	helpers.PrintSubTitle("TYPES: Slice")
 
 	// Create a slice using make() with initial length 3 and capacity 5
 	// This is useful when you know you'll need a certain capacity
@@ -42,5 +43,4 @@ func TypeSlice() {
 	sort.Ints(sliceInt)
 	fmt.Println("sorted slice:", sliceInt)
 	fmt.Println("slice from array:", sliceFromArray)
-	fmt.Println("--------------------------------")
 }

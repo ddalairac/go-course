@@ -1,6 +1,9 @@
 package types
 
-import "fmt"
+import (
+	"fmt"
+	"go-course/helpers"
+)
 
 type User struct {
 	Name     string
@@ -10,8 +13,7 @@ type User struct {
 
 /** Maps are unordered collections of key-value pairs */
 func TypeMap() {
-	fmt.Println(" ")
-	fmt.Println("TYPES: Map")
+	helpers.PrintSubTitle("TYPES: Map")
 
 	// Create an empty map using make() - useful when building the map dynamically
 	makePersonMap := make(map[string]string)
@@ -25,7 +27,7 @@ func TypeMap() {
 
 	// Create and initialize a map using map literal syntax - when you know the elements upfront
 	personMap := map[string]string{
-		"name": "John",
+		"name":     "John",
 		"lastName": "Doe",
 	}
 	usersMap := map[int]User{
@@ -44,5 +46,4 @@ func TypeMap() {
 	fmt.Println("make some map:", makeIntMap)
 	fmt.Println("person map:", personMap)
 	fmt.Println("users map:", usersMap)
-	fmt.Println("--------------------------------")
 }

@@ -2,9 +2,11 @@ package operations
 
 import (
 	"fmt"
+	"go-course/helpers"
 )
 
-/** Operation and conditionals
+/*
+* Operation and conditionals
 Key concepts:
 - if/else statements work similar to other languages
 - else if can be chained multiple times
@@ -12,8 +14,7 @@ Key concepts:
 - switch cases don't need break statements (unlike other languages)
 */
 func OperationCondition() {
-	fmt.Println(" ")
-	fmt.Println("OPERATION: Condition")
+	helpers.PrintSubTitle("OPERATION: Condition")
 
 	var isTrue bool = true
 

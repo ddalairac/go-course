@@ -2,6 +2,7 @@ package types
 
 import (
 	"fmt"
+	"go-course/helpers"
 )
 
 // Animal interface defines the behavior that all animals must implement
@@ -43,7 +44,8 @@ func (c Cat) MakeSound() string {
 	return "Meow"
 }
 
-/** Interfaces in Go
+/*
+* Interfaces in Go
 Key concepts:
 - Interfaces define a set of method signatures
 - Types implicitly implement interfaces by implementing all required methods
@@ -52,8 +54,7 @@ Key concepts:
 - Multiple types can implement the same interface
 */
 func TypeInterface() {
-	fmt.Println(" ")
-	fmt.Println("TYPES: Interface")
+	helpers.PrintSubTitle("TYPES: Interface")
 
 	// Create instances of Dog and Cat
 	dog := Dog{Name: "Buddy", Age: 3}

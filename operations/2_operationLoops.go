@@ -2,6 +2,7 @@ package operations
 
 import (
 	"fmt"
+	"go-course/helpers"
 	"go-course/types"
 )
 
@@ -14,8 +15,7 @@ Key concepts:
 - Nested loops can be used for multi-dimensional iterations
 */
 func OperationLoops() {
-	fmt.Println(" ")
-	fmt.Println("OPERATION: Loops")
+	helpers.PrintSubTitle("OPERATION: Loops")
 
 	// Traditional for loop with initialization, condition, and increment
 	for i := 0; i < 5; i++ {

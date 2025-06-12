@@ -2,6 +2,7 @@ package types
 
 import (
 	"fmt"
+	"go-course/helpers"
 )
 
 // Package scope variable only in this package
@@ -13,8 +14,7 @@ var GScope int = 24
 
 /** Basics primitive types */
 func BasicsTypes() {
-	fmt.Println(" ")
-	fmt.Println("TYPES: Basics")
+	helpers.PrintSubTitle("TYPES: Basics")
 	fmt.Println("package scope", pScope)
 	fmt.Println("global scope", GScope)
 
@@ -41,7 +41,6 @@ func BasicsTypes() {
 	// & is used to get the address of the variable
 	changeUsingPointer(&myInt)
 	fmt.Println("myInt:", myInt)
-	fmt.Println("--------------------------------")
 }
 
 // functions
