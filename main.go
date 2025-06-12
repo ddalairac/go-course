@@ -1,6 +1,8 @@
 package main
 
 import (
+	"go-course/channel"
+	"go-course/data"
 	"go-course/helpers"
 	"go-course/operations"
 	"go-course/types"
@@ -18,5 +20,11 @@ func main() {
 	operations.OperationCondition()
 	operations.OperationLoops()
 
-	// fmt.Println(" ************************************************** ")
+	helpers.PrintTitle("Package channels")
+	intChan := make(chan int)
+	defer close(intChan)
+	channel.Channel(intChan)
+
+	helpers.PrintTitle("Package data")
+	data.JsonReadWrite()
 }
