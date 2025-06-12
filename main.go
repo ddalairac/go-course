@@ -8,5 +8,10 @@ func main() {
 	TypeMap()
 	TypeSlice()
 
+	fmt.Println(" ************************************************** ")
+	OperationCondition()
+
+	// fmt.Println(" ************************************************** ")
+
 	fmt.Println(" ")
 }

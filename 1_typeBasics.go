@@ -22,9 +22,11 @@ func BasicsTypes() {
 	var whatToSay string = "Goodbye, cruel world"
 	var i int = 7
 	var f float32 = 3.14
+	var b bool = true
 	fmt.Println(whatToSay)
 	fmt.Println("i:", i)
 	fmt.Println("f:", f)
+	fmt.Println("b:", b)
 
 	// := infer type from return type
 	whatWasSaid := saySomething(whatToSay)
