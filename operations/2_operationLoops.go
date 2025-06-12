@@ -1,7 +1,8 @@
-package main
+package operations
 
 import (
 	"fmt"
+	"go-course/types"
 )
 
 /*
@@ -37,6 +38,7 @@ func OperationLoops() {
 	}
 
 	// Nested loops for multi-dimensional iterations
+	// Outer loop iterates 3 times, inner loop 3 times for each outer iteration
 	for i := 0; i < 3; i++ {
 		for j := 0; j < 3; j++ {
 			fmt.Println("nested loop index:", i, "value:", j)
@@ -76,10 +78,10 @@ func OperationLoops() {
 	}
 
 	// Range loop over a slice of User struct
-	users := []User{
-		{name: "John", lastName: "Doe", age: 30},
-		{name: "Jane", lastName: "Smith", age: 25},
-		{name: "Jim", lastName: "Brown", age: 35},
+	users := []types.User{
+		{Name: "John", LastName: "Doe", Age: 30},
+		{Name: "Jane", LastName: "Smith", Age: 25},
+		{Name: "Jim", LastName: "Brown", Age: 35},
 	}
 	for i, v := range users {
 		fmt.Println("range slice of Users struct index:", i, "value:", v)

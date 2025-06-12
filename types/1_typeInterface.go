@@ -1,4 +1,4 @@
-package main
+package types
 
 import (
 	"fmt"
@@ -13,13 +13,13 @@ type Animal interface {
 
 // Dog struct represents a dog with its properties
 type Dog struct {
-	name string
-	age  int
+	Name string
+	Age  int
 }
 
 // GetName implements the Animal interface for Dog
 func (d Dog) GetName() string {
-	return d.name
+	return d.Name
 }
 
 // MakeSound implements the Animal interface for Dog
@@ -29,13 +29,13 @@ func (d Dog) MakeSound() string {
 
 // Cat struct represents a cat with its properties
 type Cat struct {
-	name string
-	age  int
+	Name string
+	Age  int
 }
 
 // GetName implements the Animal interface for Cat
 func (c Cat) GetName() string {
-	return c.name
+	return c.Name
 }
 
 // MakeSound implements the Animal interface for Cat
@@ -56,8 +56,8 @@ func TypeInterface() {
 	fmt.Println("TYPES: Interface")
 
 	// Create instances of Dog and Cat
-	dog := Dog{name: "Buddy", age: 3}
-	cat := Cat{name: "Whiskers", age: 2}
+	dog := Dog{Name: "Buddy", Age: 3}
+	cat := Cat{Name: "Whiskers", Age: 2}
 
 	// Both Dog and Cat can be passed to PrintAnimal because they implement the Animal interface
 	PrintAnimal(dog)

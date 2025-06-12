@@ -1,19 +1,25 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"go-course/operations"
+	"go-course/types"
+)
 
 func main() {
-	BasicsTypes()
-	StructsTypes()
-	TypeMap()
-	TypeSlice()
-	TypeInterface()
+	fmt.Println("************************************************** ")
+	fmt.Println("Package types")
+	types.BasicsTypes()
+	types.StructsTypes()
+	types.TypeMap()
+	types.TypeSlice()
+	types.TypeInterface()
 
-	fmt.Println(" ************************************************** ")
-	OperationCondition()
-	OperationLoops()
+	fmt.Println("")
+	fmt.Println("************************************************** ")
+	fmt.Println("Package operations")
+	operations.OperationCondition()
+	operations.OperationLoops()
 
 	// fmt.Println(" ************************************************** ")
-
-	fmt.Println(" ")
 }

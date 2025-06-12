@@ -1,11 +1,11 @@
-package main
+package types
 
 import "fmt"
 
 type User struct {
-	name string
-	lastName string
-	age int
+	Name     string
+	LastName string
+	Age      int
 }
 
 /** Maps are unordered collections of key-value pairs */
@@ -30,14 +30,14 @@ func TypeMap() {
 	}
 	usersMap := map[int]User{
 		0: {
-			name: "John",
-			lastName: "Wick",
-			age: 30,
+			Name:     "John",
+			LastName: "Wick",
+			Age:      30,
 		},
 		1: {
-			name: "Jane",
-			lastName: "Doe",
-			age: 25,
+			Name:     "Jane",
+			LastName: "Doe",
+			Age:      25,
 		},
 	}
 	fmt.Println("make person map:", makePersonMap)
