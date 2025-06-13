@@ -2,8 +2,9 @@ package types
 
 import (
 	"fmt"
-	"go-course/helpers"
 	"time"
+
+	"github.com/diegodalairac/go-course/app1_basics/helpers"
 )
 
 /** type definition (for all packages because start with capital letter)*/

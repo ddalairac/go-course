@@ -2,7 +2,8 @@ package types
 
 import (
 	"fmt"
-	"go-course/helpers"
+
+	"github.com/diegodalairac/go-course/app1_basics/helpers"
 )
 
 // Package scope variable only in this package

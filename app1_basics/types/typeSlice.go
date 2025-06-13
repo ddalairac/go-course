@@ -2,8 +2,9 @@ package types
 
 import (
 	"fmt"
-	"go-course/helpers"
 	"sort"
+
+	"github.com/diegodalairac/go-course/app1_basics/helpers"
 )
 
 /*

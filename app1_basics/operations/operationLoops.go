@@ -2,8 +2,9 @@ package operations
 
 import (
 	"fmt"
-	"go-course/helpers"
-	"go-course/types"
+
+	"github.com/diegodalairac/go-course/app1_basics/helpers"
+	"github.com/diegodalairac/go-course/app1_basics/types"
 )
 
 /*

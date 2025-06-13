@@ -37,8 +37,9 @@ package channel
 
 import (
 	"fmt"
-	"go-course/helpers"
 	"time"
+
+	"github.com/diegodalairac/go-course/app1_basics/helpers"
 )
 
 /*

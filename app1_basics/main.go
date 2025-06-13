@@ -1,11 +1,11 @@
 package main
 
 import (
-	"go-course/channel"
-	"go-course/data"
-	"go-course/helpers"
-	"go-course/operations"
-	"go-course/types"
+	"github.com/diegodalairac/go-course/app1_basics/channel"
+	"github.com/diegodalairac/go-course/app1_basics/data"
+	"github.com/diegodalairac/go-course/app1_basics/helpers"
+	"github.com/diegodalairac/go-course/app1_basics/operations"
+	"github.com/diegodalairac/go-course/app1_basics/types"
 )
 
 func main() {

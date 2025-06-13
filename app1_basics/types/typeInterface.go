@@ -2,7 +2,8 @@ package types
 
 import (
 	"fmt"
-	"go-course/helpers"
+
+	"github.com/diegodalairac/go-course/app1_basics/helpers"
 )
 
 // Animal interface defines the behavior that all animals must implement
