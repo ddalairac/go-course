@@ -1,4 +1,4 @@
-module github.com/diegodalairac/go-course/app3_api_org
+module github.com/diegodalairac/go-course/app3_api
 
 go 1.22.2
 

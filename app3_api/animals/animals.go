@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/diegodalairac/go-course/app3_api_org/conn"
+	"github.com/diegodalairac/go-course/app3_api/conn"
 	"github.com/gorilla/mux"
 )
 

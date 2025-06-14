@@ -5,8 +5,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/diegodalairac/go-course/app3_api_org/animals"
-	"github.com/diegodalairac/go-course/app3_api_org/conn"
+	"github.com/diegodalairac/go-course/app3_api/animals"
+	"github.com/diegodalairac/go-course/app3_api/conn"
 	"github.com/gorilla/mux"
 	_ "github.com/lib/pq"
 )
